@@ -61,19 +61,11 @@ buttons.forEach((button) => {
                     resultsDiv.innerText = "YOU WIN!"
                 }else{
                     resultsDiv.innerText = "YOU LOST!"
-            }
-            
-        }
-    })
-})
+                    }
+                }
+            })
+        })
 
-function game(playerSelection){
-    while (wins < 5 || losses < 5){
-        const computerSelection = computerPlay();
-        const roundResult = playRound(playerSelection, computerSelection);
-        resultsDiv.innerText = roundResult
-    }
-}
 
 
 
